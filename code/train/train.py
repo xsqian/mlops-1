@@ -19,6 +19,7 @@ def log_confusion_matrix_image(cm, labels, normalize=False, log_name='confusion_
     '''
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
+    Added this line to test the git action
     '''
     if normalize:
         cm = cm.astype('float') / cm.sum(axis = 1)[:, np.newaxis]
